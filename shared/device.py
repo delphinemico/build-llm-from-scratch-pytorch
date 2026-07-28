@@ -1,1 +1,0 @@
-"""Reusable device-selection utilities."""

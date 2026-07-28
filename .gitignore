@@ -1,7 +1,6 @@
-# Python bytecode
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 
 # Virtual environments
 .venv/
@@ -11,20 +10,13 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Testing and coverage
+# Generated development files
 .pytest_cache/
-.coverage
-htmlcov/
+*.egg-info/
 
-# Type checking and linting
-.mypy_cache/
-.ruff_cache/
-
-# Editors and IDEs
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # Operating system files
 .DS_Store
@@ -36,22 +28,11 @@ Thumbs.db
 *.pem
 *.key
 
-# Local datasets
-data/raw/
-data/processed/
-
-# Model weights and checkpoints
+# Model artifacts and generated runs
 *.pt
 *.pth
 *.ckpt
 *.safetensors
-
-# Generated experiment outputs
 runs/
 wandb/
 mlruns/
-
-# Packaging artifacts
-build/
-dist/
-*.egg-info/

@@ -8,8 +8,6 @@ attrs==26.1.0
 babel==2.18.0
 beautifulsoup4==4.15.0
 bleach==6.4.0
-# Editable Git install with no remote (build-llm-from-scratch-pytorch==0.1.0)
--e c:\users\delmi\documents\learning\manning_learning\repos\build-llm-from-scratch-pytorch
 certifi==2026.7.22
 cffi==2.1.0
 charset-normalizer==3.4.9

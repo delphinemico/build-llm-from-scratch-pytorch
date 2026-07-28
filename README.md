@@ -1,55 +1,34 @@
-# Building a Large Language Model from Scratch with PyTorch
+# Building an LLM from Scratch with PyTorch
 
-This repository contains my PyTorch implementations, technical notes,
-experiments, and independently completed exercises developed while studying
-*Build a Large Language Model (From Scratch)* by Sebastian Raschka.
+This is my personal learning repository for Sebastian Raschka's
+*Build a Large Language Model (From Scratch)*.
 
-The purpose is not to reproduce the book verbatim. This repository documents
-my understanding of the concepts and my ability to implement, test, explain,
-and extend them independently.
+It contains selected notebooks, runnable scripts, exercises, and notes that I
+found valuable enough to preserve. The goal is to document my learning without
+duplicating the book or creating unnecessary maintenance work.
 
-## Objectives
-
-- Develop strong practical PyTorch skills.
-- Understand the complete implementation of a GPT-style language model.
-- Reproduce important components independently.
-- Complete and extend exercises.
-- Document experiments, debugging insights, and technical decisions.
-- Maintain a clean and reproducible technical portfolio.
-
-## Progress
+## Current status
 
 | Section | Status |
 |---|---|
-| Appendix A — Introduction to PyTorch | Completed |
-| Chapter 1 | In progress |
+| Appendix A — PyTorch foundations | Artifacts in progress |
+| Chapter 1 | Not started |
 
-See the [detailed progress log](notes/progress.md).
+See [`notes/progress.md`](notes/progress.md) for the detailed study log.
 
-## Repository structure
+## Repository organization
 
-- `appendix_a/`: PyTorch foundations and training implementations
-- `chapter_01/`: Chapter 1 notes, results, and exercises
-- `notes/`: Book-wide glossary, patterns, and progress
-- `shared/`: Utilities reused across multiple sections
-- `data/`: Instructions for obtaining or generating local datasets
-- `docs/`: Environment and distributed-training documentation
+- `appendix_A/`: selected PyTorch notes, scripts, and exercises
+- `chapter_01/`: artifacts created while studying Chapter 1
+- `notes/`: book-wide glossary, PyTorch patterns, and progress
 
-## Hardware and environment
+## Local environment
 
-| Item | Value |
-|---|---|
-| Operating system | Windows |
-| Python | To be recorded |
-| PyTorch | To be recorded |
-| CPU | To be recorded |
-| GPU | To be recorded |
-| CUDA | To be recorded |
+Activate the dedicated environment in Git Bash:
 
-See [environment setup](docs/environment_setup.md).
+```bash
+source ~/venvs/llmbookvenv/Scripts/activate
+```
 
-## Attribution
-
-This is an independent educational repository inspired by Sebastian Raschka's
-book. It is not an official companion repository and does not reproduce the
-book.
+The local environment is CPU-only. Single-GPU work will run in Google Colab,
+and multi-GPU DDP work will run on RunPod.

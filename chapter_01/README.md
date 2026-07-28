@@ -1,27 +1,6 @@
-# Chapter 1 — Title
+# Chapter 1
 
-## Status
+**Status:** Not started
 
-Not started
-
-## Learning objectives
-
-- 
-
-## Core concepts
-
-## Mathematical foundations
-
-## Implementations
-
-## Exercises
-
-## Independent extensions
-
-## Results and observations
-
-## Common mistakes and debugging notes
-
-## Key takeaways
-
-## Files in this chapter
+This directory will contain only the notebooks, code snippets, and exercises
+that I find valuable while studying Chapter 1.
