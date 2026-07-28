@@ -1,4 +1,5 @@
 """Multi-GPU training with PyTorch DistributedDataParallel (DDP)."""
+"""Multi-GPU DDP example intended for execution on a two-GPU RunPod instance."""
 # SIMILAR TO DDP-script.py from https://github.com/rasbt/LLMs-from-scratch/tree/main/appendix-A/01_main-chapter-code
 
 # IMPORTS
@@ -86,7 +87,7 @@ def main(rank, world_size, num_epochs):
     optimizer = torch.optim.SGD(model.parameters(), lr=0.5)
     model = DDP(model, device_ids=[rank])
 
-    for epoch in num_epochs:
+    for epoch in range(num_epochs):
         train_loader.sampler.set_epoch(epoch) # ensures each epoch gets samples ordered differently
         model.train()
         for features, labels in train_loader:

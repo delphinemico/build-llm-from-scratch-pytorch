@@ -4,14 +4,14 @@
 
 | Section | Status | Started | Completed |
 |---|---|---|---|
-| Appendix A — Introduction to PyTorch | Completed | | July 26, 2026 |
+| Appendix A — Introduction to PyTorch | Completed | | July 27, 2026 |
 | Chapter 1 | Not started | July 27, 2026 | |
 
 ## Study log
 
 ### July 27, 2026
 
-- Created the private GitHub repository.
+- Created and configured the private GitHub repository.
 - Established the chapter template and generated `chapter_01`.
 - Added the Appendix A artifact structure.
 - Configured the external `llmbookvenv` Python environment.
@@ -21,9 +21,12 @@
 
 ### July 28, 2026
 
-- Created and configured the private GitHub repository.
-- Configured the external `llmbookvenv` Python environment.
 - Reviewed PyTorch Distributed Data Parallel in depth.
 - Reconstructed and annotated the DDP training script.
 - Simplified the repository so notebooks remain the primary learning artifact.
+- Finalized the shared Appendix A utilities.
+- Implemented and ran the standard CPU training loop locally.
+- Prepared the single-GPU implementation for Google Colab.
+- Reconstructed and documented the multi-GPU DDP implementation.
+- Appendix A conceptual study is complete.
 - Chapter 1 has not yet been started.
