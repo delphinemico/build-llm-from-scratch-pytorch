@@ -1,1 +1,0 @@
-"""Shared dataset, model, and evaluation utilities for Appendix A."""

@@ -39,6 +39,19 @@ To be recorded.
 
 ## Distributed Data Parallel training
 
+### Current status
+
+Implementation reconstructed locally. Multi-GPU execution is pending on a RunPod instance with two GPUs.
+
+### Execution environment planned
+
+| Item | Value |
+|---|---|
+| Platform | RunPod |
+| Number of GPUs | 2 |
+| Launch utility | `torch.multiprocessing.spawn` |
+| Processes per node | 2 |
+
 ### Command
 
 ```bash
