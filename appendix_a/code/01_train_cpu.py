@@ -1,0 +1,1 @@
+"""Standard PyTorch training loop executed on the CPU."""

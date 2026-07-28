@@ -1,0 +1,1 @@
+"""Device-aware PyTorch training loop for a single GPU."""

@@ -1,0 +1,1 @@
+"""Multi-GPU training with PyTorch DistributedDataParallel (DDP)."""

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "build-llm-from-scratch-pytorch"
+version = "0.1.0"
+description = "PyTorch implementations, exercises, and technical notes developed while studying large language models from scratch."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "jupyterlab",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools]
+packages = ["shared"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "appendix_a/tests",
+]
+python_files = [
+    "test_*.py",
+]
