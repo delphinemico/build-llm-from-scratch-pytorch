@@ -11,6 +11,10 @@
 
 ### July 27, 2026
 
-- Started Chapter 1.
-- Created the GitHub study repository.
+- Created the private GitHub repository.
+- Established the chapter template and generated `chapter_01`.
 - Added the Appendix A artifact structure.
+- Configured the external `llmbookvenv` Python environment.
+- Installed local CPU PyTorch.
+- Configured VS Code and Jupyter to use `llmbookvenv`.
+- Recorded exact package versions in `requirements-lock.txt`.
