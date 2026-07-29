@@ -1,5 +1,7 @@
-"""Multi-GPU training with PyTorch DistributedDataParallel (DDP)."""
-"""Multi-GPU DDP example intended for execution on a two-GPU RunPod instance."""
+"""Multi-GPU training with PyTorch DistributedDataParallel (DDP).
+
+This example is intended for execution on a two-GPU RunPod instance.
+"""
 # SIMILAR TO DDP-script.py from https://github.com/rasbt/LLMs-from-scratch/tree/main/appendix-A/01_main-chapter-code
 
 # IMPORTS
@@ -17,12 +19,13 @@ from torch.distributed import init_process_group, destroy_process_group
 
 # Setting up DDP
 def ddp_setup(rank, world_size):
-    os.environ("MASTER_ADDR") = "localhost"
-    os.environ("MASTER_PORT") = "12345"
+    os.environ["MASTER_ADDR"] = "localhost"
+    os.environ["MASTER_PORT"] = "12345"
     if platform.system() == "Windows":
-        os.environ("USE_LIBUV") = "0"
+        os.environ["USE_LIBUV"] = "0"
         init_process_group(backend="gloo", rank=rank, world_size=world_size) # "gloo" is Facebook's Collective Communications Library
     else:
+        torch.cuda.set_device(rank)
         init_process_group(backend="nccl", rank=rank, world_size=world_size) # "nccl" is NVIDIA's Collective Communications Library
 
 # Custom classes
@@ -129,7 +132,13 @@ if __name__ == "__main__":
     print("Number of GPUs available:", torch.cuda.device_count())
     torch.manual_seed(123)
 
-    num_epochs = 3
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA is not available")
+
     world_size = torch.cuda.device_count() # total number of GPUs
+    if world_size != 2:
+        raise RuntimeError(f"This example expects exactly 2 GPUs, but found {world_size}")
+    
+    num_epochs = 3
     mp.spawn(main, args=(world_size, num_epochs), nprocs=world_size) # spawn --> automatically passes the rank, nprocs=world_size --> means there will be one process per GPU
     

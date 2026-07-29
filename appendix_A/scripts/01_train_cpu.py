@@ -19,9 +19,9 @@ for epoch in range(num_epochs):
     for batch_idx, (features, labels) in enumerate(train_loader):
         logits = model(features)
         loss = F.cross_entropy(logits, labels)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+        optimizer.zero_grad() # prevents gradients accumulation
+        loss.backward() # calculates gradients from computation graph
+        optimizer.step() # uses the gradients to update the model parameters as to minimize loss
         # LOGGING
         print(f"Epoch: {epoch+1:03d} | Batch {batch_idx:03d} | Train Loss: {loss:.2f}")
     model.eval()

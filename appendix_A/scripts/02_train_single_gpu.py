@@ -24,9 +24,9 @@ for epoch in range(num_epochs):
         features, labels = features.to(device), labels.to(device) # addition No3 (from 01_train_cpu.py)
         logits = model(features)
         loss = F.cross_entropy(logits, labels)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+        optimizer.zero_grad() # prevents gradients accumulation
+        loss.backward() # calculates gradients from computation graph
+        optimizer.step() # uses the gradients to update the model parameters as to minimize loss
         # LOGGING
         print(f"Epoch: {epoch+1:03d} | Batch {batch_idx:03d} | Train Loss: {loss:.2f}")
     model.eval()
