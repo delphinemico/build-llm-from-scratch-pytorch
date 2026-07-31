@@ -9,17 +9,12 @@ duplicating the book or creating unnecessary maintenance work.
 
 ## Current status
 
-| Section | Status |
-|---|---|
-| Appendix A — PyTorch foundations | Artifacts in progress |
-| Chapter 1 | Not started |
-
 See [`notes/progress.md`](notes/progress.md) for the detailed study log.
 
 ## Repository organization
 
 - `appendix_A/`: selected PyTorch notes, scripts, and exercises
-- `chapter_01/`: artifacts created while studying Chapter 1
+- `chapter_XX/`: artifacts created while studying Chapter XX
 - `notes/`: book-wide glossary, PyTorch patterns, and progress
 
 ## Local environment

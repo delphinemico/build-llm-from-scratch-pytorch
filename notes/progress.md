@@ -4,8 +4,9 @@
 
 | Section | Status | Started | Completed |
 |---|---|---|---|
-| Appendix A — Introduction to PyTorch | Completed | | July 27, 2026 |
-| Chapter 1 | Not started | July 27, 2026 | |
+| Appendix A — Introduction to PyTorch | Completed |  | July 27, 2026 |
+| Chapter 1 — Understanding Large Language Models | Completed | July 30, 2026 | July 30, 2026 |
+| Chapter 2 — Working with Text Data | In progress | July 31, 2026 |  |
 
 ## Study log
 
@@ -30,3 +31,18 @@
 - Reconstructed and documented the multi-GPU DDP implementation.
 - Appendix A conceptual study is complete.
 - Chapter 1 has not yet been started.
+
+### July 30, 2026
+
+- Started and completed Chapter 1, *Understanding Large Language Models*.
+
+### July 31, 2026
+- Created the Chapter 1 key-learnings notebook.
+- Recorded concise definitions and important conceptual takeaways.
+- Documented the three stages of coding an LLM:
+  1. building the architecture,
+  2. pretraining a foundation model,
+  3. fine-tuning for classification or instruction following.
+- Summarized the roles of tokenization, context length, attention, pretraining, and fine-tuning.
+- Added short answers to questions to revisit in later chapters.
+- Started Chapter 2, *Working with text data*.
