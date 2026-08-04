@@ -16,17 +16,26 @@ A model that generates a sequence one token at a time, using previously generate
 
 A pretrained model that has learned general patterns from a large dataset but has not yet been adapted to a specific task. Also called a **foundation model**.
 
+### Byte pair encoding
+
+A subword tokenization method that builds a vocabulary by repeatedly merging frequently occurring adjacent units.
+
 ### Classification fine-tuning
 
 Adapting a pretrained model using examples paired with class labels so that it can perform a classification task.
 
 ### Context window
 
-The maximum number of tokens a model can consider at one time.
+The maximum number of tokens a model can process as one sequence.  
+In the Chapter 2 data pipeline, this is represented by `max_length`.
 
 ### Decoder-only model
 
 A transformer model that uses only decoder-style components and generates text autoregressively. GPT is a decoder-only architecture.
+
+### Embedding
+
+A continuous numerical vector representation of a discrete object such as a token.
 
 ### Emergent behavior
 
@@ -52,6 +61,10 @@ A vector of partial derivatives that indicates how the loss changes with respect
 
 Using a trained model to generate outputs or make predictions without updating its parameters.
 
+### Input–target pair
+
+A pair of sequences used for next-token prediction, where the target sequence is the input sequence shifted one token forward.
+
 ### Instruction fine-tuning
 
 Adapting a pretrained model using instruction–response examples so that it learns to follow user requests.
@@ -68,6 +81,10 @@ The training task of predicting the token that follows a given sequence of previ
 
 A trainable value, such as a weight or bias, that is updated during model training.
 
+### Positional embedding
+
+A vector that represents a token's position within a sequence.
+
 ### Pretraining
 
 The initial large-scale training stage in which a model learns general language patterns from raw, unlabeled text.
@@ -76,9 +93,29 @@ The initial large-scale training stage in which a model learns general language 
 
 A learning approach in which labels are generated from the structure of the input data itself. In LLM pretraining, the next token serves as the label.
 
+### Sliding window
+
+A method for creating training samples by moving a fixed-length window across tokenized text.
+
+### Special token
+
+A token reserved for a specific purpose, such as marking a document boundary or representing unknown text.
+
+### Stride
+
+The number of token positions by which a sliding window moves when creating the next training sample.
+
 ### Token
 
 A unit of text processed by a language model, such as a word, subword, punctuation mark, or character sequence.
+
+### Token embedding
+
+A trainable vector representation associated with a token ID.
+
+### Token ID
+
+The integer assigned to a token in a tokenizer's vocabulary.
 
 ### Tokenization
 
@@ -87,6 +124,10 @@ The process of splitting raw text into tokens that can be converted into numeric
 ### Transformer
 
 A neural network architecture built around attention mechanisms for processing sequences and modeling relationships between tokens.
+
+### Vocabulary
+
+The complete set of tokens recognized by a tokenizer, together with their corresponding token IDs.
 
 ### Zero-shot learning
 

@@ -6,7 +6,7 @@
 |---|---|---|---|
 | Appendix A — Introduction to PyTorch | Completed |  | July 27, 2026 |
 | Chapter 1 — Understanding Large Language Models | Completed | July 30, 2026 | July 30, 2026 |
-| Chapter 2 — Working with Text Data | In progress | July 31, 2026 |  |
+| Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
 
 ## Study log
 
@@ -46,3 +46,14 @@
 - Summarized the roles of tokenization, context length, attention, pretraining, and fine-tuning.
 - Added short answers to questions to revisit in later chapters.
 - Started Chapter 2, *Working with text data*.
+
+### August 4, 2026
+
+- Completed Chapter 2, *Working with Text Data*.
+- Implemented tokenization and token-to-ID conversion.
+- Studied special tokens and byte pair encoding.
+- Implemented sliding-window sampling for next-token prediction.
+- Created `GPTDatasetV1` and a PyTorch `DataLoader`.
+- Converted token IDs into trainable token embeddings.
+- Added positional embeddings to encode token order.
+- Documented the complete raw-text-to-transformer-input pipeline.
