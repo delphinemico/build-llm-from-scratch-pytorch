@@ -7,6 +7,8 @@
 | Appendix A — Introduction to PyTorch | Completed |  | July 27, 2026 |
 | Chapter 1 — Understanding Large Language Models | Completed | July 30, 2026 | July 30, 2026 |
 | Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
+| Chapter 3 — Coding Attention Mechanisms | Completed | August 4, 2026 | August 6, 2026 |
+| Chapter 4 — Implementing a GPT model from scratch to generate text | Started | August 6, 2026 |  |
 
 ## Study log
 
@@ -57,3 +59,22 @@
 - Converted token IDs into trainable token embeddings.
 - Added positional embeddings to encode token order.
 - Documented the complete raw-text-to-transformer-input pipeline.
+- Started Chapter 3, *Coding Attention Mechanisms*.
+
+### August 5, 2026
+
+- Finished reading Chapter 3, *Coding Attention mechanisms*.
+
+### August 6, 2026
+
+- Completed Chapter 3, *Coding Attention Mechanisms*.
+- Implemented simplified self-attention and trainable scaled dot-product attention.
+- Studied the roles of queries, keys, values, attention scores, and context vectors.
+- Implemented causal masking to prevent future-token information leakage.
+- Applied dropout to attention weights for regularization.
+- Implemented `CausalAttention` for batched inputs.
+- Compared a simple multi-head wrapper with an efficient weight-splitting
+  implementation.
+- Implemented the final `MultiHeadAttention` module used by the GPT model.
+- Documented the complete attention tensor-shape flow.
+- Started Chapter 4, *Implementing a GPT model from scratch to generate text*.
