@@ -20,6 +20,10 @@ An unnormalized similarity value calculated between a query and a key.
 
 A normalized attention score that determines how strongly one token attends to another token.
 
+### Autoregressive generation
+
+Generating a sequence one token at a time using previous tokens as context.
+
 ### Autoregressive model
 
 A model that generates a sequence one token at a time, using previously generated tokens to predict the next token.
@@ -65,6 +69,10 @@ A continuous numerical vector representation of a discrete object such as a toke
 
 A capability that appears as a result of large-scale training even though the model was not explicitly trained for that specific task.
 
+### Feed-forward network
+
+A neural network applied independently to each token representation inside a transformer block.
+
 ### Fine-tuning
 
 Additional training that adapts a pretrained model to a particular task, domain, or desired behavior.
@@ -100,6 +108,14 @@ A learned representation against which a query is compared when calculating atte
 ### Large language model (LLM)
 
 A deep neural network trained on large amounts of text to model, process, and generate language.
+
+### Layer normalization
+
+A normalization method applied across the embedding dimension of each token.
+
+### Logit
+
+A raw model output score produced before applying softmax.
 
 ### Multi-head attention
 
@@ -140,6 +156,10 @@ A learning approach in which labels are generated from the structure of the inpu
 ### Scaled dot-product attention
 
 Attention that computes query–key dot products, scales them by the square root of the key dimension, and normalizes them with softmax.
+
+### Shortcut connection aka. Skip connection aka. Residual connection (ADD)
+
+A connection that adds a block's input directly to its transformed output.
 
 ### Sliding window
 

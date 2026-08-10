@@ -8,7 +8,8 @@
 | Chapter 1 — Understanding Large Language Models | Completed | July 30, 2026 | July 30, 2026 |
 | Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
 | Chapter 3 — Coding Attention Mechanisms | Completed | August 4, 2026 | August 6, 2026 |
-| Chapter 4 — Implementing a GPT model from scratch to generate text | Started | August 6, 2026 |  |
+| Chapter 4 — Implementing a GPT model from scratch to generate text | Completed | August 6, 2026 | August 7, 2026 |
+| Chapter 5 — Pretraining on unlabeled data | Started | August 10, 2026 |  |
 
 ## Study log
 
@@ -78,3 +79,14 @@
 - Implemented the final `MultiHeadAttention` module used by the GPT model.
 - Documented the complete attention tensor-shape flow.
 - Started Chapter 4, *Implementing a GPT model from scratch to generate text*.
+
+### August 7, 2026
+
+- Completed Chapter 4, *Implementing a GPT Model from Scratch to Generate Text*.
+- Implemented `LayerNorm`, `FeedForward`, and `TransformerBlock`.
+- Assembled the full `GPTModel`.
+- Implemented simple autoregressive text generation.
+- Documented the main GPT tensor-shape flow.
+
+### August 10, 2026
+- Started Chapter 5, *Pretraining on unlabeled data*.
