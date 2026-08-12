@@ -9,7 +9,8 @@
 | Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
 | Chapter 3 — Coding Attention Mechanisms | Completed | August 4, 2026 | August 6, 2026 |
 | Chapter 4 — Implementing a GPT model from scratch to generate text | Completed | August 6, 2026 | August 7, 2026 |
-| Chapter 5 — Pretraining on unlabeled data | Started | August 10, 2026 |  |
+| Chapter 5 — Pretraining on unlabeled data | Started | August 10, 2026 | August 12, 2026 |
+| Chapter 6 — Fine-tuning for classification | Started |  |  |
 
 ## Study log
 
@@ -90,3 +91,15 @@
 
 ### August 10, 2026
 - Started Chapter 5, *Pretraining on unlabeled data*.
+
+### August 11, 2026
+- Continued Chapter 5, *Pretraining on unlabeled data*.
+
+### August 12, 2026
+
+- Completed Chapter 5, *Pretraining on Unlabeled Data*.
+- Implemented next-token loss calculation and the LLM training loop.
+- Studied greedy, temperature, multinomial, and Top-K decoding.
+- Implemented the final configurable `generate()` function.
+- Saved and restored model and optimizer states.
+- Loaded pretrained OpenAI GPT-2 weights into the custom `GPTModel`.

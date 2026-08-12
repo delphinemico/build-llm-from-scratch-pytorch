@@ -36,3 +36,4 @@ Thumbs.db
 runs/
 wandb/
 mlruns/
+chapter_05/data/gpt2/
