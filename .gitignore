@@ -37,3 +37,9 @@ runs/
 wandb/
 mlruns/
 chapter_05/data/gpt2/
+chapter_06/exercises/gpt2/
+chapter_06/exercises/*.pdf
+
+# Downloaded datasets / archives
+*.zip
+chapter_06/data/sms_spam_collection/

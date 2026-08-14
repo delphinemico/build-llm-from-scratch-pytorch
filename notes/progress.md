@@ -9,8 +9,8 @@
 | Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
 | Chapter 3 — Coding Attention Mechanisms | Completed | August 4, 2026 | August 6, 2026 |
 | Chapter 4 — Implementing a GPT model from scratch to generate text | Completed | August 6, 2026 | August 7, 2026 |
-| Chapter 5 — Pretraining on unlabeled data | Started | August 10, 2026 | August 12, 2026 |
-| Chapter 6 — Fine-tuning for classification | Started |  |  |
+| Chapter 5 — Pretraining on unlabeled data | Completed | August 10, 2026 | August 12, 2026 |
+| Chapter 6 — Fine-Tuning for Classification | Completed | August 12, 2026 | August 14, 2026 |
 
 ## Study log
 
@@ -103,3 +103,16 @@
 - Implemented the final configurable `generate()` function.
 - Saved and restored model and optimizer states.
 - Loaded pretrained OpenAI GPT-2 weights into the custom `GPTModel`.
+
+### August 13, 2026
+- Finished reading Chapter 6, *Fine-Tuning for Classification*.
+
+### August 14, 2026
+
+- Completed Chapter 6, *Fine-Tuning for Classification*.
+- Prepared and balanced the SMS spam dataset.
+- Implemented the `SpamDataset` classification dataset.
+- Adapted pretrained GPT-2 with a binary classification head.
+- Implemented classification loss, accuracy, and training utilities.
+- Fine-tuned and evaluated the GPT-based spam classifier.
+- Used the fine-tuned model to classify new text.
