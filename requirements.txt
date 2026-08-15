@@ -1,0 +1,12 @@
+torch
+tiktoken
+numpy
+pandas
+matplotlib
+requests
+tqdm
+jupyterlab
+ipykernel
+
+# Required only for loading original OpenAI GPT-2 TensorFlow checkpoints
+tensorflow>=2.15

@@ -2,8 +2,8 @@
 
 ## Main artifacts
 
-- [`notebooks/01_chap1_key_learnings.ipynb`](notebooks/01_chap1_key_learnings.ipynb): my main notes, definitions, and takeaways from Chapter 1.
-- [`images/01_stages_of_building_and_using_llms.png`](images/01_stages_of_building_and_using_llms.png): diagram illustrating the main stages of building and using LLMs.
+- [`notebooks/chap1_key_learnings.ipynb`](notebooks/chap1_key_learnings.ipynb)  
+My main notes, definitions, and takeaways from Chapter 1.
 
 ## Key ideas covered
 

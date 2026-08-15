@@ -4,8 +4,8 @@ Instruction fine-tuning a pretrained GPT model using supervised instruction–re
 
 ## Artifacts
 
-- `exercises/fine_tuning_to_follow_instructions.ipynb` — complete implementation
-- `notebooks/chap7_key_learnings.ipynb` — distilled Chapter 7 concepts and core code
+- [`exercises/fine_tuning_to_follow_instructions.ipynb`](exercises/fine_tuning_to_follow_instructions.ipynb) — complete implementation
+- [`notebooks/chap7_key_learnings.ipynb`](notebooks/chap7_key_learnings.ipynb) — distilled Chapter 7 concepts and core code
 
 ## Main Flow
 
@@ -17,4 +17,3 @@ instruction data
 → supervised fine-tuning
 → response generation
 → evaluation
-```

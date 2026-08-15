@@ -1,3 +1,10 @@
+# Copyright (c) Sebastian Raschka under Apache License 2.0 (see LICENSE.txt).
+# Source for "Build a Large Language Model From Scratch"
+#   - https://www.manning.com/books/build-a-large-language-model-from-scratch
+# Code: https://github.com/rasbt/LLMs-from-scratch
+#
+# Modified and annotated by Delphine Mico, 2026, for educational study.
+
 import torch
 from torch.utils.data import Dataset, DataLoader
 import tiktoken

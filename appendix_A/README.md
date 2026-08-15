@@ -4,12 +4,16 @@ Appendix A introduced the PyTorch foundations needed for the rest of the book.
 
 ## Main artifacts
 
-- [`notebooks/training_loop_anatomy.ipynb`](notebooks/training_loop_anatomy.ipynb) contains my primary notes, selected code snippets, and observations.
-- [`scripts/common.py`](scripts/common.py):   shared model, dataset, and evaluation utilities
-- [`scripts/01_train_cpu.py`](scripts/01_train_cpu.py) contains the standard CPU training loop.
-- [`scripts/02_train_single_gpu.py`](scripts/02_train_single_gpu.py) contains the single-GPU adaptation, intended for Google Colab.
-- [`scripts/03_train_ddp.py`](scripts/03_train_ddp.py) contains the multi-GPU DDP implementation, intended for a two-GPU RunPod environment.
-- `exercises/` contains work that I complete independently.
+- [`notebooks/appA_training_loop_anatomy.ipynb`](notebooks/appA_training_loop_anatomy.ipynb)  
+Contains my primary notes, selected code snippets, and observations.
+- [`scripts/common.py`](scripts/common.py)  
+Shared model, dataset, and evaluation utilities.
+- [`scripts/01_train_cpu.py`](scripts/01_train_cpu.py)  
+Contains the standard CPU training loop.
+- [`scripts/02_train_single_gpu.py`](scripts/02_train_single_gpu.py)  
+Contains the single-GPU adaptation, intended for Google Colab.
+- [`scripts/03_train_ddp.py`](scripts/03_train_ddp.py)  
+Contains the multi-GPU DDP implementation, intended for a two-GPU RunPod environment.
 
 ## Learning sequence
 

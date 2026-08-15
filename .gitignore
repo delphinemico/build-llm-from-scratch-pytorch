@@ -44,3 +44,8 @@ chapter_07/data/gpt2/
 # Downloaded datasets / archives
 *.zip
 chapter_06/data/sms_spam_collection/
+
+# Reproducible study datasets
+chapter_02/data/the-verdict.txt
+chapter_06/data/*.csv
+chapter_07/data/*.json
