@@ -69,7 +69,7 @@ def calc_loss_loader(data_loader, model, device, num_batches=None): # num_batche
         if i < num_batches:
             loss = calc_loss_batch(input_batch, target_batch, model, device)
             total_loss += loss.item()
-    return loss / num_batches
+    return total_loss / num_batches
 
 import numpy as np
 

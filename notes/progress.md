@@ -4,13 +4,14 @@
 
 | Section | Status | Started | Completed |
 |---|---|---|---|
-| Appendix A — Introduction to PyTorch | Completed |  | July 27, 2026 |
+| Appendix A — Introduction to PyTorch | Completed | June 20, 2026 | July 27, 2026 |
 | Chapter 1 — Understanding Large Language Models | Completed | July 30, 2026 | July 30, 2026 |
 | Chapter 2 — Working with Text Data | Completed | July 31, 2026 | August 4, 2026 |
 | Chapter 3 — Coding Attention Mechanisms | Completed | August 4, 2026 | August 6, 2026 |
 | Chapter 4 — Implementing a GPT model from scratch to generate text | Completed | August 6, 2026 | August 7, 2026 |
 | Chapter 5 — Pretraining on unlabeled data | Completed | August 10, 2026 | August 12, 2026 |
 | Chapter 6 — Fine-Tuning for Classification | Completed | August 12, 2026 | August 14, 2026 |
+| Chapter 7 — Fine-Tuning to follow instructions | Completed | August 14, 2026 | August 15, 2026 |
 
 ## Study log
 
@@ -116,3 +117,13 @@
 - Implemented classification loss, accuracy, and training utilities.
 - Fine-tuned and evaluated the GPT-based spam classifier.
 - Used the fine-tuned model to classify new text.
+
+### August 15, 2026
+
+- Completed Chapter 7, *Fine-Tuning to Follow Instructions*.
+- Prepared and formatted instruction–response data.
+- Implemented `InstructionDataset` and custom batching for instruction fine-tuning.
+- Fine-tuned a pretrained GPT model on supervised instruction examples.
+- Generated responses from the fine-tuned model.
+- Evaluated the instruction-following behavior of the model.
+- Completed all chapters in the book.

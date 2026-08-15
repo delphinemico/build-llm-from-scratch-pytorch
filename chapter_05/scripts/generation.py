@@ -24,3 +24,32 @@ def text_to_token_ids(text, tokenizer):
 def token_ids_to_text(token_ids, tokenizer):
     flat = token_ids.squeeze(0)
     return tokenizer.decode(flat.tolist())
+
+def generate(model, idx, max_new_tokens, context_size, temperature=0.0, top_k=None, eos_id=None):
+    for _ in range(max_new_tokens): # determines the number of iterations
+        idx_cond = idx[:, -context_size:] # idx conditioned by the context
+        with torch.no_grad():
+            logits = model(idx_cond) # shape: (b, seq_len, vocab_size)
+        logits = logits[:, -1, :] # we only care about the last token
+
+        if top_k is not None: # i.e. top-k sampling
+            top_logits, _ = torch.topk(logits, top_k)
+            min_val = top_logits[:, -1]
+            logits = torch.where(
+                condition= logits < min_val,
+                input= torch.tensor(float('-inf')).to(logits.device), # i.e. masking with -inf the non-topk values so that later the softmax only considers the top k values
+                other= logits
+            )
+
+        if temperature > 0.0:
+            logits = logits/temperature
+            probs = torch.softmax(logits, dim=-1) # re-normalizing the probabilities so that they sum up to 1
+            idx_next = torch.multinomial(probs, num_samples=1) # i.e. multinomial sampling - model samples one token from this probability distribution
+        else:
+            idx_next = torch.argmax(logits, dim=-1, keepdim=True) # i.e using greedy decoding sampling
+
+        if idx_next == eos_id:
+            break
+
+        idx = torch.cat((idx, idx_next), dim=1)
+    return idx   
