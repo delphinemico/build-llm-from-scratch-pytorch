@@ -48,6 +48,7 @@ build-llm-from-scratch-pytorch/
 │   └── scripts/
 │
 ├── chapter_04/
+│   ├── exercises/
 │   ├── notebooks/
 │   └── scripts/
 │

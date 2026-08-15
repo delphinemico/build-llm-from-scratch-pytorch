@@ -16,3 +16,4 @@ prepare labeled data
 → fine-tune selected layers
 → evaluate
 → classify new text
+```
